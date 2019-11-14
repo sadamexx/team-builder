@@ -17,6 +17,7 @@ const Members = props => {
                         <CardText>Name: {member.name}</CardText>
                         <CardText>Email: {member.email}</CardText>
                         <CardText>Role: {member.role}</CardText>
+                        <CardText>Super-Power: {member.power}</CardText>
                     </CardBody>
                 </Card>    
             ))}

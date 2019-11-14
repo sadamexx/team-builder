@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -27,6 +28,7 @@
 
 .card-main {
   margin-top: 20px;
+  
 }
 
 .card-container{
@@ -56,6 +58,11 @@
 }
 
 .email {
+  margin: 15px;
+  color: darkcyan;
+}
+
+.power {
   margin: 15px;
   color: darkcyan;
 }

@@ -4,7 +4,8 @@ const MemberForm = props => {
     const [member, setMember] = useState({
         name: "",
         email: "",
-        role: ""
+        role: "",
+        power: ""
     });
 
     const handleChanges = event => {
@@ -12,7 +13,8 @@ const MemberForm = props => {
             ...member,
             [event.target.name]: event.target.value,
             [event.target.email]: event.target.value,
-            [event.target.role]: event.target.value
+            [event.target.role]: event.target.value,
+            [event.target.power]: event.target.value
         });
     }
 
@@ -22,7 +24,8 @@ const MemberForm = props => {
         setMember({
             name: "",
             email: "",
-            role: ""
+            role: "",
+            power: ""
         });
     };
 
@@ -50,6 +53,18 @@ const MemberForm = props => {
             <option value = "Maknae"> Maknae </option> 
             <option value = "Rapper" > Rapper </option>           
             <option value = "Visual" > Visual </option> 
+        </select> 
+        <label htmlFor = "power" className="power">Super-Power</label>
+        <select id = "power" name = "power" value = {member.power} onChange = {handleChanges}>
+            <option value = "empty"> </option>
+            <option value = "Earth"> Earth </option>  
+            <option value = "Fire"> Fire </option> 
+            <option value = "Frost" > Frost </option> 
+            <option value = "Light"> Light </option>
+            <option value = "Lightning" > Lightning </option>  
+            <option value = "Teleportation" > Teleportation </option>           
+            <option value = "Water" > Water </option>
+            <option value = "Wind"> Wind </option>  
         </select> 
         <button className="submit" type="submit">Submit</button>
 
