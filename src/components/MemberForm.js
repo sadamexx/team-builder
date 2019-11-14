@@ -1,6 +1,4 @@
-import React, {
-    useState
-} from "react";
+import React, {useState} from "react";
 
 const MemberForm = props => {
     const [member, setMember] = useState({
@@ -28,55 +26,34 @@ const MemberForm = props => {
         });
     };
 
-    return ( <
-        form onSubmit = {
-            submitForm
-        } >
-        <
-        label htmlFor = "name" > Name < /label> <
-        input id = "name"
-        type = "text"
-        name = "name"
-        onChange = {
-            handleChanges
-        }
-        value = {
-            member.name
-        }
-        /> <
-        label htmlFor = "email" > Email < /label> <
-        input id = "email"
-        type = "email"
-        name = "email"
-        value = {
-            member.email
-        }
-        onChange = {
-            handleChanges
-        }
-        /> <
-        label htmlFor = "role" > Role < /label> <
-        select id = "role"
-        name = "role"
-        value = {
-            member.role
-        }
-        onChange = {
-            handleChanges
-        } >
-        <
-        option value = "Leader" > < /option> <
-        option value = "Leader" > Leader < /option> <
-        option value = "Lead Dancer" > Lead Dancer < /option> <
-        option value = "Lead Vocalist" > Lead Vocalist < /option> <
-        option value = "Maknae" > Maknae < /option> <
-        option value = "Rapper" > Rapper < /option>           <
-        option value = "Visual" > Visual < /option> <
-        /select> <
-        button type = "submit" > Submit < /button>
+    return ( 
+        <form onSubmit = {submitForm} >
+        <label htmlFor = "name" className="name">Name</label>
+         <input 
+            id = "name"
+            type = "text"
+            name = "name"
+            onChange = {handleChanges}
+            value = {member.name}/>
+        <label htmlFor = "email" className= "email">Email</label>
+        <input id = "email"
+            type = "email"
+            name = "email"
+            value = {member.email}
+            onChange = {handleChanges}/> 
+        <label htmlFor = "role" className="role">Role</label>
+        <select id = "role" name = "role" value = {member.role} onChange = {handleChanges}>
+            <option value = "empty"> </option> 
+            <option value = "Leader"> Leader </option> 
+            <option value = "Lead Dancer"> Lead Dancer </option> 
+            <option value = "Lead Vocalist"> Lead Vocalist </option>
+            <option value = "Maknae"> Maknae </option> 
+            <option value = "Rapper" > Rapper </option>           
+            <option value = "Visual" > Visual </option> 
+        </select> 
+        <button className="submit" type="submit">Submit</button>
 
-        <
-        /form>
+        </form>
     )
 } //ends function MemberForm
 

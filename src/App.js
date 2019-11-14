@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Members from "./components/Members";
 import MemberForm from "./components/MemberForm";
+import { Container, Row} from "reactstrap";
 
 import './App.css';
 
@@ -24,9 +25,13 @@ function App() {
       <header className="App-header">
         <h1>Welcome to Our Team Tracker!</h1>
       </header>
-      <MemberForm addNewMember={addNewMember} />
-      <Members team={team} />
-    </div>
+      <MemberForm addNewMember={addNewMember}/>
+      <Container>
+        <Row>
+          <Members team={team}/>
+        </Row>
+      </Container>
+     </div>
   );
 }
 

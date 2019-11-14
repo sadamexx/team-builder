@@ -9,19 +9,53 @@
 .App-header {
   background-image: url("https://i2.wp.com/bibandtuck.com/wp-content/uploads/2018/11/word-image-29.png?fit=700%2C274&ssl=1");
   background-size: cover;
-  min-height: 45vh;
-  
+  min-height: 55vh;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: lightseagreen
+  font-size: calc(20px + 2vmin);
+  color: lightseagreen;
+  text-shadow: 1px 1px 5px black
 }
 
 .App-link {
   color: #09d3ac;
 }
 
+.card-main {
+  margin-top: 20px;
+}
+
+.card-container{
+  background-color: lightgray;
+  text-align: left
+}
+
+.card-container .member-title{
+  color: steelblue;
+  text-align: center;
+  font-size: 25px;
+  font-style: bold;
+}
+
+.submit {
+  margin: 15px;
+}
+
+.role {
+  margin: 15px;
+  color: darkcyan;
+  }
+
+.name {
+  margin: 15px;
+  color:darkcyan;
+}
+
+.email {
+  margin: 15px;
+  color: darkcyan;
+}
